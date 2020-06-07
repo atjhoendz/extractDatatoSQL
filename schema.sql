@@ -1,10 +1,14 @@
 -- Schema Database
 
+DROP DATABASE IF EXISTS dbDatware;
 CREATE DATABASE IF NOT EXISTS dbDatware;
 
 USE dbDatware;
 
+DROP TABLE IF EXISTS factTable;
+DROP TABLE IF EXISTS perKasus;
 DROP TABLE IF EXISTS perProvinsi;
+DROP TABLE IF EXISTS waktu;
 
 CREATE TABLE perProvinsi (
   kode_provinsi INT PRIMARY KEY,
@@ -13,8 +17,6 @@ CREATE TABLE perProvinsi (
   kasus_sembuh INT,
   kasus_meninggal INT
 );
-
-DROP TABLE IF EXISTS perKasus;
 
 CREATE TABLE perKasus (
   id_kasus INT PRIMARY KEY,
@@ -30,16 +32,12 @@ CREATE TABLE perKasus (
   FOREIGN KEY (kode_provinsi) REFERENCES perProvinsi(kode_provinsi)
 );
 
-DROP TABLE IF EXISTS waktu
-
 CREATE TABLE waktu (
   id_waktu INT AUTO_INCREMENT PRIMARY KEY,
   tahun VARCHAR(10),
   bulan VARCHAR(10),
   hari VARCHAR(10)
 );
-
-DROP TABLE IF EXISTS factTable
 
 CREATE TABLE factTable (
   id_factTable INT AUTO_INCREMENT PRIMARY KEY,
