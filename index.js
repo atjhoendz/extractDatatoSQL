@@ -1,5 +1,5 @@
 import axios from 'axios'
-import fs, { fstatSync } from 'fs'
+import fs from 'fs'
 
 const baseURL = 'https://indonesia-covid-19.mathdro.id/api';
 
