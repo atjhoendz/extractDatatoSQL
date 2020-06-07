@@ -12,10 +12,11 @@ const getData = async(param) => {
     }
 }
 
-let id_kasus = 1;
+var id_kasus = 1;
 const mapDataPerKasus = (data) => {
     let tanggal_ditambahkan = new Date(data.added_date);
-    tanggal_ditambahkan = `${tanggal_ditambahkan.getFullYear()}-${tanggal_ditambahkan.getMonth()+1}-${tanggal_ditambahkan.getDay()+1}`
+    tanggal_ditambahkan = `${tanggal_ditambahkan.getFullYear()}-${tanggal_ditambahkan.getMonth()+1}-${tanggal_ditambahkan.getDay()+1}`;
+
     return {
         "id_kasus": id_kasus++,
         "kode_provinsi": data.provinsi,
@@ -40,8 +41,11 @@ const mapDataPerProvinsi = (data) => {
     }
 }
 
-const mapDataPerHari = (data) => {
+const mapDataFactTable = (data) => {
     return {
+        "id_factTable": data.id_factTable,
+        "id_waktu": data.id_waktu,
+        "id_kasus": data.id_kasus,
         "jumlah_kasus_sembuh_perhari": data.jumlahKasusSembuhperHari,
         "jumlah_kasus_meninggal_perhari": data.jumlahKasusMeninggalperHari,
         "jumlah_kasus_dirawat_perhari": data.jumlahKasusDirawatperHari,
@@ -71,7 +75,7 @@ const insertQueryPerKasus = async() => {
     dataPerKasus = dataPerKasus.map(data => mapDataPerKasus(data));
 
     dataPerKasus.forEach(data => {
-        let query = `INSERT INTO perKasus VALUES(${data.id_kasus}, ${data.kode_provinsi}, ${data.jenis_kelamin}, ${data.umur}, '${data.keterangan}', '${data.garis_penularan}', '${data.keterangan_status}', '${data.wn}', '${data.detail_wn}', '${data.tanggal_ditambahkan}');\n`;
+        let query = `INSERT INTO perKasus VALUES(${data.id_kasus}, ${data.kode_provinsi}, '${data.jenis_kelamin}', ${data.umur}, '${data.keterangan}', '${data.garis_penularan}', '${data.keterangan_status}', '${data.wn}', '${data.detail_wn}', '${data.tanggal_ditambahkan}');\n`;
         appendFile('insertQuery.sql', query);
     });
 }

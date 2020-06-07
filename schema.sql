@@ -21,7 +21,7 @@ CREATE TABLE perProvinsi (
 CREATE TABLE perKasus (
   id_kasus INT PRIMARY KEY,
   kode_provinsi INT,
-  jenis_kelamin VARCHAR(2),
+  jenis_kelamin VARCHAR(5),
   umur INT,
   keterangan VARCHAR(50),
   garis_penularan VARCHAR(50),
