@@ -12,7 +12,7 @@ const getData = async(param) => {
     }
 }
 
-var id_kasus = 1;
+let id_kasus = 1;
 const mapDataPerKasus = (data) => {
     let tanggal_ditambahkan = new Date(data.added_date);
     tanggal_ditambahkan = `${tanggal_ditambahkan.getFullYear()}-${tanggal_ditambahkan.getMonth()+1}-${tanggal_ditambahkan.getDay()+1}`;
@@ -38,20 +38,6 @@ const mapDataPerProvinsi = (data) => {
         "kasus_positif": data.kasusPosi,
         "kasus_sembuh": data.kasusSemb,
         "kasus_meninggal": data.kasusMeni
-    }
-}
-
-const mapDataFactTable = (data) => {
-    return {
-        "id_factTable": data.id_factTable,
-        "id_waktu": data.id_waktu,
-        "id_kasus": data.id_kasus,
-        "jumlah_kasus_sembuh_perhari": data.jumlahKasusSembuhperHari,
-        "jumlah_kasus_meninggal_perhari": data.jumlahKasusMeninggalperHari,
-        "jumlah_kasus_dirawat_perhari": data.jumlahKasusDirawatperHari,
-        "jumlah_negatif": data.jumlahNegatif,
-        "pdp": data.pdp,
-        "odp": data.odp
     }
 }
 
@@ -90,10 +76,33 @@ const insertQueryPerProvinsi = async() => {
     });
 }
 
+const insertQueryWaktu = () => {
+    let date = new Date();
+    date.setDate(date.getDate() - 99);
+
+    for (let i = 1; i <= 98; i++) {
+        date.setDate(date.getDate() + 1);
+        let query = `INSERT INTO waktu VALUES(${i}, '${date.getFullYear()}', '${date.getMonth()+1}', '${date.getDate()}');\n`
+        appendFile('insertQuery.sql', query);
+    }
+}
+
+const insertQueryFactTable = async() => {
+    let dataPerHari = await getData('harian');
+    let i = 1;
+    dataPerHari.forEach(data => {
+        let query = `INSERT INTO factTable(id_waktu, id_kasus, jumlah_kasus_sembuh_perhari, jumlah_kasus_meninggal_perhari, jumlah_kasus_dirawat_perhari, jumlah_negatif, pdp, odp) VALUES(${i}, ${i}, ${data.jumlahKasusSembuhperHari}, ${data.jumlahKasusMeninggalperHari}, ${data.jumlahKasusDirawatperHari}, ${data.jumlahNegatif}, ${data.pdp}, ${data.odp});\n`;
+        appendFile('insertQuery.sql', query);
+        i++;
+    });
+}
+
 const main = () => {
-    writeToFile('insertQuery.sql', '');
-    insertQueryPerProvinsi();
-    insertQueryPerKasus();
+    // writeToFile('insertQuery.sql', '');
+    // insertQueryPerProvinsi();
+    // insertQueryPerKasus();
+    // insertQueryWaktu();
+    insertQueryFactTable();
 }
 
 export default main();

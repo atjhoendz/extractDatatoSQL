@@ -33,7 +33,7 @@ CREATE TABLE perKasus (
 );
 
 CREATE TABLE waktu (
-  id_waktu INT AUTO_INCREMENT PRIMARY KEY,
+  id_waktu INT PRIMARY KEY,
   tahun VARCHAR(10),
   bulan VARCHAR(10),
   hari VARCHAR(10)
@@ -44,7 +44,7 @@ CREATE TABLE factTable (
   id_waktu INT,
   id_kasus INT,
   jumlah_kasus_sembuh_perhari INT,
-  jumlah_kasus_meniggal_perhari INT,
+  jumlah_kasus_meninggal_perhari INT,
   jumlah_kasus_dirawat_perhari INT,
   jumlah_negatif INT,
   pdp INT,
