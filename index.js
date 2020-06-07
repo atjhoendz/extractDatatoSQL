@@ -8,7 +8,7 @@ const getData = async(param) => {
         const response = await axios.get(`${baseURL}/${param}`);
         return response.data.data;
     } catch (err) {
-        consolo.log(err);
+        console.log(err);
     }
 }
 
