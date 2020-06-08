@@ -1,9 +1,9 @@
--- Schema Database
+-- Schema Database SQL SERVER
 
-DROP DATABASE IF EXISTS dbDatware;
-CREATE DATABASE IF NOT EXISTS dbDatware;
+-- DROP DATABASE IF EXISTS dbDatware;
+-- CREATE DATABASE IF NOT EXISTS dbDatware;
 
-USE dbDatware;
+-- USE dbDatware;
 
 DROP TABLE IF EXISTS factTable;
 DROP TABLE IF EXISTS perKasus;
@@ -40,7 +40,7 @@ CREATE TABLE waktu (
 );
 
 CREATE TABLE factTable (
-  id_factTable INT AUTO_INCREMENT PRIMARY KEY,
+  id_factTable INT PRIMARY KEY,
   id_waktu INT,
   id_kasus INT,
   jumlah_kasus_sembuh_perhari INT,

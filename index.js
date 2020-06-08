@@ -91,9 +91,11 @@ const insertQueryFactTable = async() => {
     let dataPerHari = await getData('harian');
     let i = 1;
     dataPerHari.forEach(data => {
-        let query = `INSERT INTO factTable(id_waktu, id_kasus, jumlah_kasus_sembuh_perhari, jumlah_kasus_meninggal_perhari, jumlah_kasus_dirawat_perhari, jumlah_negatif, pdp, odp) VALUES(${i}, ${i}, ${data.jumlahKasusSembuhperHari}, ${data.jumlahKasusMeninggalperHari}, ${data.jumlahKasusDirawatperHari}, ${data.jumlahNegatif}, ${data.pdp}, ${data.odp});\n`;
-        appendFile('insertQuery.sql', query);
-        i++;
+        if (i <= 98) {
+            let query = `INSERT INTO factTable VALUES(${i}, ${i}, ${i}, ${data.jumlahKasusSembuhperHari}, ${data.jumlahKasusMeninggalperHari}, ${data.jumlahKasusDirawatperHari}, ${data.jumlahNegatif}, ${data.pdp == null ? 0 : data.pdp}, ${data.odp == null ? 0 : data.odp});\n`;
+            appendFile('insertQuery.sql', query);
+        }
+        ++i;
     });
 }
 
