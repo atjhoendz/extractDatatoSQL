@@ -1,0 +1,1 @@
+-- Perhitungan Growth Rate kasus positif covid

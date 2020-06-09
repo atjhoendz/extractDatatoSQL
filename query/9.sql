@@ -1,0 +1,1 @@
+-- Perhitungan kasus positif Warga Negara Asing (WNA)

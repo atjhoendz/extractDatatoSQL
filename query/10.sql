@@ -1,0 +1,1 @@
+-- Perhitungan kelengkapan data yang ada
