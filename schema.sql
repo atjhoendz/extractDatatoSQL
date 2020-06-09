@@ -46,6 +46,7 @@ CREATE TABLE factTable (
   jumlah_kasus_sembuh_perhari INT,
   jumlah_kasus_meninggal_perhari INT,
   jumlah_kasus_dirawat_perhari INT,
+  jumlah_kasus_diperiksa_spesimen INT,
   jumlah_negatif INT,
   pdp INT,
   odp INT,

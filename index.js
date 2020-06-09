@@ -61,8 +61,10 @@ const insertQueryPerKasus = async() => {
     dataPerKasus = dataPerKasus.map(data => mapDataPerKasus(data));
 
     dataPerKasus.forEach(data => {
-        let query = `INSERT INTO perKasus VALUES(${data.id_kasus}, ${data.kode_provinsi}, '${data.jenis_kelamin}', ${data.umur}, '${data.keterangan}', '${data.garis_penularan}', '${data.keterangan_status}', '${data.wn}', '${data.detail_wn}', '${data.tanggal_ditambahkan}');\n`;
-        appendFile('insertQuery.sql', query);
+        if (data.kode_provinsi != '10') {
+            let query = `INSERT INTO perKasus VALUES(${data.id_kasus}, ${data.kode_provinsi}, '${data.jenis_kelamin}', ${data.umur}, '${data.keterangan}', '${data.garis_penularan}', '${data.keterangan_status}', '${data.wn}', '${data.detail_wn}', '${data.tanggal_ditambahkan}');\n`;
+            appendFile('insertQuery.sql', query);
+        }
     });
 }
 
@@ -71,8 +73,10 @@ const insertQueryPerProvinsi = async() => {
     dataPerProvinsi = dataPerProvinsi.map(data => mapDataPerProvinsi(data));
 
     dataPerProvinsi.forEach(data => {
-        let query = `INSERT INTO perProvinsi VALUES(${data.kode_provinsi}, '${data.nama_provinsi}', ${data.kasus_positif}, ${data.kasus_sembuh}, ${data.kasus_meninggal});\n`;
-        appendFile('insertQuery.sql', query);
+        if (data.kode_provinsi != '0'){
+            let query = `INSERT INTO perProvinsi VALUES(${data.kode_provinsi}, '${data.nama_provinsi}', ${data.kasus_positif}, ${data.kasus_sembuh}, ${data.kasus_meninggal});\n`;
+            appendFile('insertQuery.sql', query);
+        }
     });
 }
 
@@ -92,7 +96,7 @@ const insertQueryFactTable = async() => {
     let i = 1;
     dataPerHari.forEach(data => {
         if (i <= 98) {
-            let query = `INSERT INTO factTable VALUES(${i}, ${i}, ${i}, ${data.jumlahKasusSembuhperHari}, ${data.jumlahKasusMeninggalperHari}, ${data.jumlahKasusDirawatperHari}, ${data.jumlahNegatif}, ${data.pdp == null ? 0 : data.pdp}, ${data.odp == null ? 0 : data.odp});\n`;
+            let query = `INSERT INTO factTable VALUES(${i}, ${i}, ${i}, ${data.jumlahKasusSembuhperHari}, ${data.jumlahKasusMeninggalperHari}, ${data.jumlahKasusDirawatperHari}, ${data.jumlahKasusDiperiksaSpesimen}, ${data.jumlahNegatif}, ${data.pdp == null ? 0 : data.pdp}, ${data.odp == null ? 0 : data.odp});\n`;
             appendFile('insertQuery.sql', query);
         }
         ++i;
