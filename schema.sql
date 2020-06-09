@@ -23,7 +23,7 @@ CREATE TABLE perKasus (
   kode_provinsi INT,
   jenis_kelamin VARCHAR(5),
   umur INT,
-  keterangan VARCHAR(50),
+  keterangan VARCHAR(255),
   garis_penularan VARCHAR(50),
   keterangan_status VARCHAR(50),
   wn VARCHAR(5),
