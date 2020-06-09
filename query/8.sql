@@ -6,7 +6,7 @@ SELECT
     FROM 
         perKasus
     WHERE
-        keterangan = "Masih proses PE")
-    * 100 / COUNT(*)
+        keterangan = 'Masih proses PE')
+    * 100 / COUNT(*) AS 'Jumlah Kasus Dengan Status PE'
 FROM
     perKasus; 
