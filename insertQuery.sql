@@ -139,7 +139,6 @@ INSERT INTO perKasus VALUES(103, 33, 'L', 0, '', '', '', '1', '', '2020-3-1');
 INSERT INTO perKasus VALUES(104, 33, 'L', 0, '', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(105, 31, 'L', 40, 'kontak kasus 49', '', '', '1', '', '2020-3-1');
 INSERT INTO perKasus VALUES(107, 32, 'L', 27, 'Masih proses PE', '', '', '1', '', '2020-3-1');
-INSERT INTO perKasus VALUES(106, 10, 'P', 38, '', '', '', '1', '', '2020-3-1');
 INSERT INTO perKasus VALUES(108, 31, 'L', 65, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(109, 31, 'P', 67, 'kasus tunggal', '', '', '1', '', '2020-3-1');
 INSERT INTO perKasus VALUES(112, 31, 'L', 54, 'Masih proses PE', '', '', '1', '', '2020-3-1');
@@ -178,7 +177,6 @@ INSERT INTO perKasus VALUES(142, 36, 'P', 28, 'kasus tunggal', '', '', '0', '', 
 INSERT INTO perKasus VALUES(143, 31, 'L', 48, 'dr. Sp.OT', '', '', '0', '', '2020-3-3');
 INSERT INTO perKasus VALUES(144, 31, 'L', 44, 'Masih proses PE', '', '', '0', '', '2020-3-3');
 INSERT INTO perKasus VALUES(145, 36, 'P', 74, 'Masih proses PE', '', '', '0', '', '2020-3-3');
-INSERT INTO perKasus VALUES(147, 10, 'L', 38, 'Masih proses PE', '', '', '0', '', '2020-3-3');
 INSERT INTO perKasus VALUES(149, 35, 'L', 55, 'Masih proses PE', '', '', '0', '', '2020-3-3');
 INSERT INTO perKasus VALUES(146, 31, 'L', 34, 'Masih proses PE', '', '', '0', '', '2020-3-3');
 INSERT INTO perKasus VALUES(148, 33, 'P', 45, 'Masih proses PE', '', '', '0', '', '2020-3-3');
@@ -462,7 +460,6 @@ INSERT INTO perKasus VALUES(425, 31, 'L', 49, 'Masih proses PE', '', '', '0', ''
 INSERT INTO perKasus VALUES(427, 35, 'P', 25, 'Kontak kasus 48', '', '', '0', '', '2020-3-7');
 INSERT INTO perKasus VALUES(428, 35, 'P', 21, 'Kontak kasus 48', '', '', '0', '', '2020-3-7');
 INSERT INTO perKasus VALUES(429, 35, 'L', 53, 'Masih proses PE', '', '', '0', '', '2020-3-7');
-INSERT INTO perKasus VALUES(431, 10, 'L', 34, 'Masih proses PE', '', '', '0', '', '2020-3-7');
 INSERT INTO perKasus VALUES(433, 31, 'L', 31, 'Masih proses PE', '', '', '0', '', '2020-3-7');
 INSERT INTO perKasus VALUES(432, 31, 'L', 57, 'Masih proses PE', '', '', '0', '', '2020-3-7');
 INSERT INTO perKasus VALUES(434, 36, 'L', 30, 'Masih proses PE', '', '', '0', '', '2020-3-7');
@@ -638,7 +635,6 @@ INSERT INTO perKasus VALUES(603, 12, 'L', 44, 'Masih proses PE', '', '', '0', ''
 INSERT INTO perKasus VALUES(604, 12, 'L', 25, 'Masih proses PE', '', '', '0', '', '2020-3-3');
 INSERT INTO perKasus VALUES(605, 12, 'L', 0, 'Masih proses PE', '', '', '0', '', '2020-3-3');
 INSERT INTO perKasus VALUES(606, 31, 'L', 42, 'Masih proses PE', '', '', '0', '', '2020-3-3');
-INSERT INTO perKasus VALUES(607, 10, 'L', 59, 'Masih proses PE', '', '', '0', '', '2020-3-3');
 INSERT INTO perKasus VALUES(608, 31, 'L', 20, 'Masih proses PE', '', '', '0', '', '2020-3-3');
 INSERT INTO perKasus VALUES(609, 31, 'L', 33, 'Masih proses PE', '', '', '0', '', '2020-3-3');
 INSERT INTO perKasus VALUES(610, 31, 'L', 30, 'Masih proses PE', '', '', '0', '', '2020-3-3');
@@ -765,7 +761,6 @@ INSERT INTO perKasus VALUES(729, 31, 'L', 39, 'Masih proses PE', '', '', '0', ''
 INSERT INTO perKasus VALUES(730, 31, 'L', 55, 'Masih proses PE', '', '', '0', '', '2020-3-4');
 INSERT INTO perKasus VALUES(731, 31, 'L', 53, 'Masih proses PE', '', '', '0', '', '2020-3-4');
 INSERT INTO perKasus VALUES(733, 36, 'L', 47, 'Masih proses PE', '', '', '0', '', '2020-3-4');
-INSERT INTO perKasus VALUES(732, 10, 'L', 51, 'Masih proses PE', '', '', '0', '', '2020-3-4');
 INSERT INTO perKasus VALUES(735, 31, 'L', 0, 'Masih proses PE', '', '', '0', '', '2020-3-4');
 INSERT INTO perKasus VALUES(736, 32, 'L', 29, 'Masih proses PE', '', '', '0', '', '2020-3-4');
 INSERT INTO perKasus VALUES(737, 32, 'L', 34, 'Masih proses PE', '', '', '0', '', '2020-3-4');
@@ -904,8 +899,6 @@ INSERT INTO perKasus VALUES(867, 31, 'L', 68, 'Masih proses PE', '', '', '0', ''
 INSERT INTO perKasus VALUES(869, 31, 'L', 37, 'Masih proses PE', '', '', '0', '', '2020-3-5');
 INSERT INTO perKasus VALUES(870, 62, 'L', 0, 'Masih proses PE', '', '', '0', '', '2020-3-5');
 INSERT INTO perKasus VALUES(871, 62, 'L', 0, 'Masih proses PE', '', '', '0', '', '2020-3-5');
-INSERT INTO perKasus VALUES(872, 10, 'L', 35, 'Masih proses PE', '', '', '0', '', '2020-3-5');
-INSERT INTO perKasus VALUES(873, 10, 'L', 54, 'Masih proses PE', '', '', '0', '', '2020-3-5');
 INSERT INTO perKasus VALUES(874, 11, 'L', 46, 'Masih proses PE', '', '', '0', '', '2020-3-5');
 INSERT INTO perKasus VALUES(875, 31, 'L', 31, 'Masih proses PE', '', '', '0', '', '2020-3-5');
 INSERT INTO perKasus VALUES(876, 31, 'L', 58, 'Masih proses PE', '', '', '0', '', '2020-3-5');
@@ -915,12 +908,7 @@ INSERT INTO perKasus VALUES(879, 31, 'L', 62, 'Masih proses PE', '', '', '0', ''
 INSERT INTO perKasus VALUES(881, 31, 'L', 37, 'Masih proses PE', '', '', '0', '', '2020-3-5');
 INSERT INTO perKasus VALUES(880, 31, 'L', 29, 'Masih proses PE', '', '', '0', '', '2020-3-5');
 INSERT INTO perKasus VALUES(882, 31, 'L', 38, 'Masih proses PE', '', '', '0', '', '2020-3-5');
-INSERT INTO perKasus VALUES(883, 10, 'L', 38, 'Masih proses PE', '', '', '0', '', '2020-3-5');
-INSERT INTO perKasus VALUES(884, 10, 'L', 50, 'Masih proses PE', '', '', '0', '', '2020-3-5');
-INSERT INTO perKasus VALUES(885, 10, 'L', 64, 'Masih proses PE', '', '', '0', '', '2020-3-5');
 INSERT INTO perKasus VALUES(888, 31, 'P', 63, 'Masih proses PE', '', '', '0', '', '2020-3-5');
-INSERT INTO perKasus VALUES(887, 10, 'L', 29, 'Masih proses PE', '', '', '0', '', '2020-3-5');
-INSERT INTO perKasus VALUES(886, 10, 'L', 28, 'Masih proses PE', '', '', '0', '', '2020-3-5');
 INSERT INTO perKasus VALUES(890, 35, 'P', 38, 'Masih proses PE', '', '', '0', '', '2020-3-5');
 INSERT INTO perKasus VALUES(889, 35, 'L', 49, 'Masih proses PE', '', '', '0', '', '2020-3-5');
 INSERT INTO perKasus VALUES(893, 35, 'P', 14, 'Masih proses PE', '', '', '0', '', '2020-3-5');
@@ -949,7 +937,6 @@ INSERT INTO perKasus VALUES(914, 36, 'L', 51, 'Masih proses PE', '', '', '0', ''
 INSERT INTO perKasus VALUES(916, 36, 'L', 61, 'Masih proses PE', '', '', '0', '', '2020-3-6');
 INSERT INTO perKasus VALUES(912, 32, 'L', 39, 'Masih proses PE', '', '', '0', '', '2020-3-6');
 INSERT INTO perKasus VALUES(915, 36, 'L', 28, 'Masih proses PE', '', '', '0', '', '2020-3-6');
-INSERT INTO perKasus VALUES(918, 10, 'P', 29, 'Masih proses PE', '', '', '0', '', '2020-3-6');
 INSERT INTO perKasus VALUES(919, 36, 'P', 27, 'Masih proses PE', '', '', '0', '', '2020-3-6');
 INSERT INTO perKasus VALUES(917, 36, 'P', 32, 'Masih proses PE', '', '', '0', '', '2020-3-6');
 INSERT INTO perKasus VALUES(920, 36, 'L', 42, 'Masih proses PE', '', '', '0', '', '2020-3-6');
@@ -981,7 +968,6 @@ INSERT INTO perKasus VALUES(945, 31, 'L', 40, 'Masih proses PE', '', '', '0', ''
 INSERT INTO perKasus VALUES(946, 31, 'L', 49, 'Masih proses PE', '', '', '0', '', '2020-3-6');
 INSERT INTO perKasus VALUES(947, 31, 'L', 63, 'Masih proses PE', '', '', '0', '', '2020-3-6');
 INSERT INTO perKasus VALUES(948, 36, 'L', 1, 'Masih proses PE', '', '', '0', '', '2020-3-6');
-INSERT INTO perKasus VALUES(949, 10, 'L', 0, 'Masih proses PE', '', '', '0', '', '2020-3-6');
 INSERT INTO perKasus VALUES(951, 31, 'L', 27, 'Masih proses PE', '', '', '0', '', '2020-3-6');
 INSERT INTO perKasus VALUES(950, 31, 'L', 24, 'Masih proses PE', '', '', '0', '', '2020-3-6');
 INSERT INTO perKasus VALUES(952, 31, 'L', 55, 'Masih proses PE', '', '', '0', '', '2020-3-6');
@@ -1175,7 +1161,6 @@ INSERT INTO perKasus VALUES(1139, 31, 'L', 51, 'Masih proses PE', '', '', '0', '
 INSERT INTO perKasus VALUES(1141, 31, 'L', 33, 'Masih proses PE', '', '', '0', '', '2020-3-7');
 INSERT INTO perKasus VALUES(1140, 31, 'L', 50, 'Masih proses PE', '', '', '0', '', '2020-3-7');
 INSERT INTO perKasus VALUES(1143, 31, 'L', 64, 'Masih proses PE', '', '', '0', '', '2020-3-7');
-INSERT INTO perKasus VALUES(1142, 10, 'L', 52, 'Masih proses PE', '', '', '0', '', '2020-3-7');
 INSERT INTO perKasus VALUES(1144, 31, 'L', 62, 'Masih proses PE', '', '', '0', '', '2020-3-7');
 INSERT INTO perKasus VALUES(1146, 31, 'L', 55, 'Masih proses PE', '', '', '0', '', '2020-3-7');
 INSERT INTO perKasus VALUES(1145, 31, 'L', 26, 'Masih proses PE', '', '', '0', '', '2020-3-7');
@@ -1188,9 +1173,7 @@ INSERT INTO perKasus VALUES(1152, 31, 'L', 31, 'Masih proses PE', '', '', '0', '
 INSERT INTO perKasus VALUES(1153, 31, 'L', 58, 'Masih proses PE', '', '', '0', '', '2020-3-7');
 INSERT INTO perKasus VALUES(1155, 33, 'L', 69, 'Masih proses PE', '', '', '0', '', '2020-3-7');
 INSERT INTO perKasus VALUES(1154, 33, 'L', 38, 'Masih proses PE', '', '', '0', '', '2020-3-7');
-INSERT INTO perKasus VALUES(1156, 10, 'L', 38, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(1158, 31, 'L', 69, 'Masih proses PE', '', '', '0', '', '2020-3-1');
-INSERT INTO perKasus VALUES(1157, 10, 'L', 56, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(1159, 31, 'P', 27, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(1161, 36, 'P', 46, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(1162, 31, 'P', 39, 'Masih proses PE', '', '', '0', '', '2020-3-1');
@@ -1260,7 +1243,6 @@ INSERT INTO perKasus VALUES(1223, 73, 'L', 42, 'Masih proses PE', '', '', '0', '
 INSERT INTO perKasus VALUES(1224, 73, 'P', 36, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(1226, 35, 'L', 59, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(1227, 35, 'P', 49, 'Masih proses PE', '', '', '0', '', '2020-3-1');
-INSERT INTO perKasus VALUES(1228, 10, 'L', 0, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(1229, 35, 'P', 39, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(1230, 35, 'P', 11, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(1231, 35, 'L', 26, 'Masih proses PE', '', '', '0', '', '2020-3-1');
@@ -1308,11 +1290,8 @@ INSERT INTO perKasus VALUES(1272, 32, 'P', 0, 'Masih proses PE', '', '', '0', ''
 INSERT INTO perKasus VALUES(1273, 32, 'L', 0, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(1274, 31, 'L', 0, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(1278, 32, 'P', 0, 'Masih proses PE', '', '', '0', '', '2020-3-1');
-INSERT INTO perKasus VALUES(1275, 10, 'L', 0, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(1276, 32, 'L', 0, 'Masih proses PE', '', '', '0', '', '2020-3-1');
-INSERT INTO perKasus VALUES(1279, 10, 'L', 48, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(1277, 36, 'P', 42, 'Masih proses PE', '', '', '0', '', '2020-3-1');
-INSERT INTO perKasus VALUES(1280, 10, 'P', 47, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(1282, 13, 'P', 80, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(1284, 33, 'L', 64, 'Masih proses PE', '', '', '0', '', '2020-3-1');
 INSERT INTO perKasus VALUES(1283, 13, 'P', 64, 'Masih proses PE', '', '', '0', '', '2020-3-1');
@@ -1344,7 +1323,6 @@ INSERT INTO perKasus VALUES(1308, 63, 'L', 50, 'Masih proses PE', '', '', '0', '
 INSERT INTO perKasus VALUES(1309, 63, 'L', 24, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1311, 33, 'L', 35, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1310, 19, 'L', 54, 'Masih proses PE', '', '', '0', '', '2020-3-2');
-INSERT INTO perKasus VALUES(1312, 10, 'L', 0, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1313, 15, 'L', 53, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1315, 18, 'L', 53, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1316, 18, 'L', 15, 'Masih proses PE', '', '', '0', '', '2020-3-2');
@@ -1354,13 +1332,9 @@ INSERT INTO perKasus VALUES(1317, 18, 'L', 1, 'Masih proses PE', '', '', '0', ''
 INSERT INTO perKasus VALUES(1319, 32, 'L', 35, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1320, 31, 'L', 48, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1321, 31, 'L', 19, 'Masih proses PE', '', '', '0', '', '2020-3-2');
-INSERT INTO perKasus VALUES(1323, 10, 'L', 26, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1322, 18, 'L', 30, 'Masih proses PE', '', '', '0', '', '2020-3-2');
-INSERT INTO perKasus VALUES(1324, 10, 'L', 27, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1326, 31, 'L', 42, 'Masih proses PE', '', '', '0', '', '2020-3-2');
-INSERT INTO perKasus VALUES(1325, 10, 'L', 56, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1327, 12, 'L', 33, 'Masih proses PE', '', '', '0', '', '2020-3-2');
-INSERT INTO perKasus VALUES(1328, 10, 'L', 32, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1329, 12, 'L', 66, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1330, 12, 'L', 44, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1332, 12, 'L', 54, 'Masih proses PE', '', '', '0', '', '2020-3-2');
@@ -1369,7 +1343,6 @@ INSERT INTO perKasus VALUES(1334, 63, 'L', 21, 'Masih proses PE', '', '', '0', '
 INSERT INTO perKasus VALUES(1333, 32, 'L', 31, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1335, 33, 'L', 64, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1337, 32, 'L', 46, 'Masih proses PE', '', '', '0', '', '2020-3-2');
-INSERT INTO perKasus VALUES(1338, 10, 'L', 0, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1336, 33, 'L', 34, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1340, 32, 'L', 52, 'Masih proses PE', '', '', '0', '', '2020-3-2');
 INSERT INTO perKasus VALUES(1342, 51, 'L', 29, 'Masih proses PE', '', '', '0', '', '2020-3-2');
@@ -1473,7 +1446,6 @@ INSERT INTO perKasus VALUES(1433, 31, 'L', 54, 'Masih proses PE', '', '', '0', '
 INSERT INTO perKasus VALUES(1438, 52, 'L', 46, 'Masih proses PE', '', '', '0', '', '2020-3-3');
 INSERT INTO perKasus VALUES(1440, 63, 'L', 40, 'Masih proses PE', '', '', '0', '', '2020-3-3');
 INSERT INTO perKasus VALUES(1439, 63, 'L', 41, 'Masih proses PE', '', '', '0', '', '2020-3-3');
-INSERT INTO perKasus VALUES(1442, 10, 'L', 0, 'Masih proses PE', '', '', '0', '', '2020-3-3');
 INSERT INTO perKasus VALUES(1441, 62, 'L', 27, 'Masih proses PE', '', '', '0', '', '2020-3-3');
 INSERT INTO perKasus VALUES(1443, 33, 'L', 59, 'Masih proses PE', '', '', '0', '', '2020-3-3');
 INSERT INTO perKasus VALUES(1445, 33, 'L', 51, 'Masih proses PE', '', '', '0', '', '2020-3-3');
