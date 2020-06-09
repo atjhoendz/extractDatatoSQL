@@ -1,0 +1,1 @@
+-- Perhitungan rata-rata kasus spesimen diperiksa harian

@@ -1,0 +1,1 @@
+-- Perbandingan rata-rata kenaikan ODP & PDP dan rata-rata kenaikan kasus positif untuk memprediksi kenaikan jumlah positif kedepannya. 
