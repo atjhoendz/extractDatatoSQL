@@ -23,4 +23,5 @@ SELECT
 		)
 	) AS 'CFR %'
 FROM
-	perProvinsi p;
+	perProvinsi p
+ORDER BY 'CFR %' DESC;
