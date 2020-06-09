@@ -1,26 +1,26 @@
 -- Perhitungan Case Fatality Rate dan pengaruhnya dalam intensitas penanganan di masing-masing provinsi
 
-select
+SELECT
 	nama_provinsi,
 	kasus_positif,
 	kasus_meninggal,
 	(
 		((
-			select
+			SELECT
 				kasus_meninggal
-			from 
+			FROM 
 				perProvinsi o
-			where 
+			WHERE 
 				o.nama_provinsi = p.nama_provinsi
 		) * 100)/
 		(
-			select
+			SELECT
 				kasus_positif
-			from
+			FROM
 				perProvinsi o
-			where
+			WHERE
 				o.nama_provinsi = p.nama_provinsi
 		)
 	) AS 'CFR %'
-from
+FROM
 	perProvinsi p;
