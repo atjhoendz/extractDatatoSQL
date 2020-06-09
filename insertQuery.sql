@@ -31,7 +31,6 @@ INSERT INTO perProvinsi VALUES(19, 'Kepulauan Bangka Belitung', 102, 35, 1);
 INSERT INTO perProvinsi VALUES(53, 'Nusa Tenggara Timur', 97, 14, 1);
 INSERT INTO perProvinsi VALUES(76, 'Sulawesi Barat', 94, 61, 2);
 INSERT INTO perProvinsi VALUES(17, 'Bengkulu', 92, 40, 4);
-INSERT INTO perProvinsi VALUES(0, 'Indonesia', 21, 0, 0);
 INSERT INTO perProvinsi VALUES(11, 'Aceh', 20, 18, 1);
 INSERT INTO perKasus VALUES(1, 32, 'P', 31, '', '', '', '1', '', '2020-3-2');
 INSERT INTO perKasus VALUES(2, 32, 'P', 34, 'Kontak kasus 1', '1', '', '1', '', '2020-3-2');
