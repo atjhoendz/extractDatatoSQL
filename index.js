@@ -80,7 +80,7 @@ const insertQueryPerProvinsi = async() => {
     });
 }
 
-const insertQueryWaktu = () => {
+const insertQueryWaktu = async() => {
     let date = new Date();
     date.setDate(date.getDate() - 99);
 
@@ -91,16 +91,24 @@ const insertQueryWaktu = () => {
     }
 }
 
+const randNum = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 const insertQueryFactTable = async() => {
     let dataPerHari = await getData('harian');
-    let i = 1;
-    dataPerHari.forEach(data => {
-        if (i <= 98 && i != 12 && i != 60 ) {
-            let query = `INSERT INTO factTable VALUES(${i}, ${i}, ${i}, ${data.jumlahKasusSembuhperHari}, ${data.jumlahKasusMeninggalperHari}, ${data.jumlahKasusDirawatperHari}, ${data.jumlahKasusDiperiksaSpesimen}, ${data.jumlahNegatif}, ${data.pdp == null ? 0 : data.pdp}, ${data.odp == null ? 0 : data.odp});\n`;
+    let dataPerKasus = await getData('kasus');
+
+    let jmlDataPerKasus = dataPerKasus.length;
+    let jmlDataPerHari = dataPerHari.length;
+
+    for( let i = 1; i <= jmlDataPerKasus; i++) {
+        if (i != 12 && i != 60 ) {
+            let num = randNum(1, 98);
+            let query = `INSERT INTO factTable VALUES(${i}, ${num}, ${i}, ${dataPerHari[num].jumlahKasusSembuhperHari}, ${dataPerHari[num].jumlahKasusMeninggalperHari}, ${dataPerHari[num].jumlahKasusDirawatperHari}, ${dataPerHari[num].jumlahKasusDiperiksa}, ${dataPerHari[num].jumlahNegatif}, ${dataPerHari[num].pdp == null ? 0 : dataPerHari[num].pdp}, ${dataPerHari[num].odp == null ? 0 : dataPerHari[num].odp});\n`;
             appendFile('insertQuery.sql', query);
         }
-        ++i;
-    });
+    }
 }
 
 const main = () => {
