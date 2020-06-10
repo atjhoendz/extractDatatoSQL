@@ -1,15 +1,36 @@
 -- Perhitungan Growth Rate kasus positif covid
-select 
-	f.id_kasus
-from 
-	factTable f
-inner join perKasus k
-	ON f.id_kasus = k.id_kasus
-inner join perProvinsi p
-	ON p.kode_provinsi = k.kode_provinsi
-where 
-	id_waktu >= 31
-	AND
-	id_waktu <= 60
-group by 
-	f.id_kasus
+--- Bulan 1
+SELECT
+    COUNT(factTable.id_kasus) AS JumlahBulan1
+FROM
+    factTable 
+        JOIN perKasus ON factTable.id_kasus = perKasus.id_kasus
+        JOIN perProvinsi ON perKasus.kode_provinsi = perProvinsi.kode_provinsi
+WHERE
+    factTable.id_waktu BETWEEN 1 AND 31
+ORDER BY
+    JumlahBulan1 DESC;
+
+-- Bulan 2
+SELECT
+    COUNT(factTable.id_kasus) AS JumlahBulan2
+FROM
+    factTable 
+        JOIN perKasus ON factTable.id_kasus = perKasus.id_kasus
+        JOIN perProvinsi ON perKasus.kode_provinsi = perProvinsi.kode_provinsi
+WHERE
+    factTable.id_waktu BETWEEN 32 AND 62
+ORDER BY
+    JumlahBulan2 DESC;
+
+-- Bulan 3
+SELECT
+    COUNT(factTable.id_kasus) AS JumlahBulan3
+FROM
+    factTable 
+        JOIN perKasus ON factTable.id_kasus = perKasus.id_kasus
+        JOIN perProvinsi ON perKasus.kode_provinsi = perProvinsi.kode_provinsi
+WHERE
+    factTable.id_waktu BETWEEN 63 AND 93
+ORDER BY
+    JumlahBulan3 DESC;
