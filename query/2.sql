@@ -30,6 +30,7 @@ GROUP BY
 ORDER BY
     Bulan_2 DESC;
 
+    
 --- Bulan 3
 SELECT
     perProvinsi.nama_provinsi AS Nama_Provinsi,
@@ -39,13 +40,8 @@ FROM
         JOIN perKasus ON factTable.id_kasus = perKasus.id_kasus
         JOIN perProvinsi ON perKasus.kode_provinsi = perProvinsi.kode_provinsi
 WHERE
-    factTable.id_waktu BETWEEN 1 AND 31
-    OR factTable.id_waktu BETWEEN 32 AND 62
-    OR factTable.id_waktu BETWEEN 63 AND 93
+    factTable.id_waktu BETWEEN 63 AND 93
 GROUP BY 
     perKasus.kode_provinsi, perProvinsi.nama_provinsi
 ORDER BY
     Bulan_3 DESC;
-
---
---
